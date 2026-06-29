@@ -1,0 +1,258 @@
+/*
+  Super – Ecommerce Operators Landing Page
+  Design system inspired by existing Super landing
+*/
+
+:root {
+  --paper: #f7f5ef;
+  --ink: #0a0a0a;
+  --muted: #68645d;
+  --white: #ffffff;
+  --line: rgba(10, 10, 10, 0.12);
+  --radius-xl: 34px;
+  --radius-lg: 22px;
+  --radius-md: 14px;
+  --shadow-soft: 0 28px 80px rgba(24, 22, 18, 0.12);
+  --shadow-hard: 0 26px 80px rgba(0, 0, 0, 0.18);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cabinet Grotesk', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background:
+    radial-gradient(1200px 800px at 10% -10%, rgba(0,0,0,0.06), transparent 60%),
+    radial-gradient(1000px 700px at 90% 10%, rgba(0,0,0,0.05), transparent 55%),
+    var(--paper);
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.page {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.ambient-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.paper-noise {
+  position: fixed;
+  inset: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4"/></filter><rect width="120" height="120" filter="url(%23n)" opacity="0.035"/></svg>');
+  pointer-events: none;
+  z-index: 1;
+}
+
+.shell {
+  max-width: 1200px;
+  padding: 0 28px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 18px;
+  background: rgba(247,245,239,0.8);
+  backdrop-filter: blur(14px);
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+  z-index: 10;
+}
+
+.brand img {
+  width: 34px;
+  height: 34px;
+}
+
+.nav-links {
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.nav-cta .btn {
+  padding: 10px 18px;
+}
+
+.hero {
+  padding: 180px 0 140px;
+  text-align: center;
+}
+
+.hero-inner h1 {
+  max-width: 1120px;
+  margin: 0 auto 28px;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero-sub {
+  max-width: 820px;
+  margin: 0 auto 36px;
+  font-size: 20px;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.btn-black {
+  background: var(--ink);
+  color: var(--white);
+  padding: 16px 26px;
+  box-shadow: var(--shadow-hard);
+}
+
+.btn-white {
+  background: var(--white);
+  color: var(--ink);
+  padding: 16px 26px;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.media-frame {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-hard);
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.media-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chapter {
+  padding: 140px 0;
+}
+
+.chapter h2 {
+  font-size: clamp(32px, 4.5vw, 52px);
+  margin-bottom: 28px;
+}
+
+.chapter p {
+  max-width: 760px;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.sources {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+}
+
+.source-card {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+  font-size: 14px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.bento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 60px 0;
+  grid-auto-flow: dense;
+}
+
+.bento-item {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+}
+
+.bento-item h3 {
+  margin-top: 0;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 60px;
+  grid-auto-flow: dense;
+}
+
+.compare-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+}
+
+.compare-card.highlight {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.cta-band {
+  padding: 140px 0;
+  text-align: center;
+}
+
+.cta-band p {
+  margin: 24px auto 40px;
+}
+
+@media (max-width: 900px) {
+  .bento,
+  .compare-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding-top: 160px;
+  }
+}
