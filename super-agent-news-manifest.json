@@ -1,0 +1,37 @@
+{
+  "citations": [
+    {
+      "title": "Introducing computer use in Gemini 3.5 Flash",
+      "url": "https://blog.google/technology/ai/introducing-computer-use-in-gemini-3-5-flash/"
+    },
+    {
+      "title": "Google Gemini Can Now Control Your Computer. Hackers Are Already Targeting AI Agents",
+      "url": "https://www.searchenginejournal.com/google-gemini-can-now-control-your-computer/518995/"
+    },
+    {
+      "title": "Gemini Can Now Operate Your Computer and Attackers Are Already Adapting",
+      "url": "https://www.law.com/alm/global/2026/06/29/gemini-can-now-operate-your-computer-and-attackers-are-already-adapting/"
+    },
+    {
+      "title": "Why AI Agents Are the Next Great Technological Transformation",
+      "url": "https://time.com/6986420/ai-agents-next-technological-transformation/"
+    }
+  ],
+  "design_plan": "rng=42; AIDA=pass; hero_math=max1120px/2-3lines; bento_density=grid-auto-flow:dense; label_sweep=ok; button_contrast=AA+",
+  "generated_at": "2026-06-29T19:32:55.055805+00:00",
+  "headline": "Super for ecommerce operators monitoring orders, support, and repetitive admin",
+  "site_brief": {
+    "audience": "ecommerce operators monitoring orders, support, and repetitive admin",
+    "goal": "Create a conversion-focused landing page for this audience. Tie current market evidence to pain points, then show how Super can operate apps and reuse a computer-use cache for repeated work.",
+    "kind": "niche_landing",
+    "queries": [
+      "ecommerce operators monitoring orders, support, and repetitive admin AI assistant",
+      "ecommerce operators monitoring orders, support, and repetitive admin personal AI agent",
+      "computer use AI agent",
+      "AI workflow automation"
+    ],
+    "slug": "super-for-ecommerce-operators-monitoring-orders-support-an",
+    "title": "Super for ecommerce operators monitoring orders, support, and repetitive admin"
+  },
+  "summary": "A conversion\u2011focused niche landing page for ecommerce operators who live inside dashboards, inboxes, and admin tools all day. It ties current evidence around computer\u2011using AI agents to real ecommerce workflows, then positions Super as the sharper alternative thanks to personal agents that can actually operate computers and reuse a computer-use cache for repeated work."
+}
